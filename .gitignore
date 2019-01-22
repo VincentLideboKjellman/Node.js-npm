@@ -1,2 +1,6 @@
 node-modules
 public/*.js
+public/*.map
+
+public/*.css
+public/images
