@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>giphy</title>
+  </head>
+  <body>
+    <script>
+      'use strict';
+      // Fetch GIFs with your API key and search query.
+      fetch('https://api.giphy.com/v1/gifs/search?api_key=xq1QYQUuQza2EN6C84vpKA2BU2gDYIPG&q=cat')
+        .then(response => response.json()) // Parse the JSON data.
+        .then(response => {
+          // Fetch first image from the data array and create an image element.
+          const image = new Image();
+          image.src = response.data[0].images.downsized.url;
+          // Add the image to the body.
+          document.body.appendChild(image);
+        });
+    </script>
+  </body>
+</html>
