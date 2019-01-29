@@ -10,7 +10,6 @@ const babel = require("rollup-plugin-babel");
 const resolve = require("rollup-plugin-node-resolve");
 const commonJs = require("rollup-plugin-commonjs");
 const {terser} = require("rollup-plugin-terser");
-const injectEnv = require("rollup-plugin-inject-env");
 
 const isProduction = process.env.NODE_ENV === "production";
 const isDevelopment = isProduction === false;
@@ -23,7 +22,7 @@ module.exports = {
     sourcemap: isDevelopment
   },
   plugins: [
-    injectEnv(),
+
     commonJs(),
     resolve(),
     babel(),
