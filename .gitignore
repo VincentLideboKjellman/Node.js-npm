@@ -4,3 +4,7 @@ public/*.map
 
 public/*.css
 public/images
+
+testFolder
+
+.env
