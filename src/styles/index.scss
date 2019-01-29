@@ -1,3 +1,47 @@
 body{
   background-color: hotpink;
 }
+
+.header{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+img{
+  padding-top: 10%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.giphy{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search{
+  margin-top: 1%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.search__button{
+  margin-top: 10%;
+  width: 50%;
+}
+
+.footer{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer__copyright{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
